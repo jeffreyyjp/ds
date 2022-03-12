@@ -12,7 +12,7 @@ typedef struct ListNode
 
 typedef struct LinkList
 {
-    ListNode head;
+    ListNode head; // Virtual head node
     int length;
 } LinkList;
 
@@ -131,3 +131,4 @@ int main()
     }
     clear_linklist(list);
 }
+
