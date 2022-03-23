@@ -46,8 +46,7 @@ int push(priority_queue *q, int val) {
 int pop(priority_queue *q) {
     if (q == NULL) return 0;
     if (empty(q)) return 0;
-    q->data[0] = q->data[q->cnt];
-    q->cnt--;
+    q->data[0] = q->data[q->cnt--];
     int tmp = 0;
     while (tmp < q->cnt) {
         int larger = tmp;
